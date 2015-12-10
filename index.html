@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Replicate html</title>
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<h3>Default will clear input field</h3>
+
+<div id="replicate-default">
+    <div class="first-example">
+        <input type="text" value="Clear input">
+    </div>
+</div>
+<a href="#" class="replicate-html-element" data-source=".first-example"
+   data-destination="#replicate-default">replicate</a>
+
+<h3>Retain input field value</h3>
+
+<div id="replicate-with-value">
+    <div class="second-example">
+        <input type="text" value="Retain Text">
+    </div>
+</div>
+<a href="#" class="replicate-html-element" data-source=".second-example" data-destination="#replicate-with-value"
+   data-clear-data=false>replicate</a>
+
+<h3>Some field should not replicate</h3>
+
+<div id="replicate-except">
+    <div class="third-example">
+        <input id="email" type="text" placeholder="Don't Replicate Me"><br>
+        <input type="text" placeholder="item">
+    </div>
+</div>
+<a href="#" class="replicate-html-element" data-source=".third-example" data-destination="#replicate-except"
+   data-except="#email">replicate</a>
+
+<h3>Replicate with header index</h3>
+
+<div id="replicate-with-header">
+    <div class="header-example">
+        <h4>Header <span class="header-index hidden remove-hidden">1</span></h4>
+        <input type="text" placeholder="item">
+    </div>
+</div>
+<a href="#" class="replicate-html-element" data-source=".header-example" data-destination="#replicate-with-header">replicate</a>
+
+
+<h3>Replicate with prepend method</h3>
+
+<div id="replicate-with-prepend">
+    <div class="prepend-example">
+        <h4>Header <span class="header-index">1</span></h4>
+        <input type="text" placeholder="item">
+    </div>
+</div>
+<a href="#" class="replicate-html-element" data-source=".prepend-example" data-destination="#replicate-with-prepend"
+   data-insertion-mode="prepend">replicate</a>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/replicate-html.js"></script>
+</body>
+
+</html>

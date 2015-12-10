@@ -1,0 +1,22 @@
+{
+  "name": "replicate-html",
+  "version": "1.0.0",
+  "description": "Replicate a group of html element",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrabbani/replicate-html.git"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "mahbub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrabbani/replicate-html/issues"
+  },
+  "homepage": "https://github.com/mrabbani/replicate-html#readme"
+}
